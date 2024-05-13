@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url("bc.jpg");
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #000;
+    background-color: rgb(97, 219, 219);
+}
+
+#snake {
+    
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+}
+
+#food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0a680f;
+}
+
+#scoreDisplay {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f00;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#gameOverDisplay {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f00;
+    opacity: 0;
+    transition: opacity 1s;
+}
